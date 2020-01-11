@@ -3,20 +3,27 @@ HIPSTER STARTUP NAMES
 
 Author: Mark K Cowan, mark@battlesnake.co.uk, github.com/battlesnake
 
-Basically, just clone this pile of crap then run:
+Basically, just clone this pile of crap onto a Linux computer with aspell available, then run:
 
-	./generate.sh
+	./select.sh
 
-Or to run as web server on port 1234:
+to generate the name of your shitty new startup.
+
+---
+
+Example one-linear, generating five future unicorns:
+
+	$ for x in {1..5}; do ./select.sh ; done
+	seismographr.io
+	teletypewritr.io
+	nonusr.io
+	lithographr.io
+	notepapr.io
+
+---
+
+Or to run the glorious web server _written in Bash for HackerNews points_ on port 1234:
 
 	port=1234 ./server.sh
 
-## Le scripts
-
-### generate.sh: generates the name list
-
-    perl >list </usr/share/dict/words -ne 'print if not /[A-Z]/ and s/(?<![aeiou])er$/r.io/'
-
-### select.sh: selects a random name from the name list
-
-    grep -v '#' list | sort -R | head -n1
+Good luck stopping it though.
