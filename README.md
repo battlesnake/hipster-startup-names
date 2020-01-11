@@ -3,7 +3,7 @@ HIPSTER STARTUP NAMES
 
 Author: Mark K Cowan, mark@battlesnake.co.uk, github.com/battlesnake
 
-Basically, just clone this pile of crap onto a Linux computer with aspell available, then run:
+Basically, just clone this pile of crap, then run:
 
 	./select.sh
 
